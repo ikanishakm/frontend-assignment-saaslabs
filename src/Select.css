@@ -1,0 +1,71 @@
+/* Custom Select Styles */
+.custom-select {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  justify-content: end;
+  min-width: 80px;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  padding: 6px 30px 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.custom-select select:hover {
+  background-color: #e6e6e6;
+  border-color: #c0c0c0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.custom-select::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+  font-size: 0.7rem;
+}
+
+/* Dropdown options styling */
+.custom-select select option {
+  background-color: white;
+  color: #333;
+  padding: 10px;
+}
+
+.custom-select select option:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-select select option:checked {
+  background-color: #007bff;
+  color: white;
+}
+
+.info {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
